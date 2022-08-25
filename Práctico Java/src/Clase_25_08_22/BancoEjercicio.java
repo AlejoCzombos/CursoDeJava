@@ -64,6 +64,7 @@ class Cliente{
     public Cliente(String nombre, float saldo){
         this.nombre = nombre;
         this.saldo = saldo;
+        this.numeroCliente = (int) (Math.random()*100);
     }
 
     public int getNumeroCliente() {
@@ -99,7 +100,7 @@ class Cliente{
 
     @Override
     public String toString() {
-        return "\nNombre: " + this.nombre + "\nsaldo: " + this.saldo ;
+        return "\nNombre: " + this.nombre + "\nsaldo: " + this.saldo + "\nNroCliente: " + this.numeroCliente;
     }
 }
 
