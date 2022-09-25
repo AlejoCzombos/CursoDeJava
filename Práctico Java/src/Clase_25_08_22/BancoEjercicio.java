@@ -19,7 +19,6 @@ public class BancoEjercicio {
             System.out.println(cliente);
             caja.extraer(cliente, 10000);
         }
-
         System.out.print(bancoNacion.toString());
     }
 }
