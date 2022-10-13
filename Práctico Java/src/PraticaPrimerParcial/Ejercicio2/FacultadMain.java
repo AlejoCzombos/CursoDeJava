@@ -1,8 +1,10 @@
 package PraticaPrimerParcial.Ejercicio2;
 
+import java.util.Scanner;
+
 public class FacultadMain {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws LetrasException {
 
        Profesor p1 = new Profesor("Facundo", "Uferer", "23458");
        Profesor p2 = new Profesor("Facundo", "Matoff", "24673");
@@ -35,5 +37,12 @@ public class FacultadMain {
         f1.agregarCarrera(c3);
 
         f1.mostrarCarreras();
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un nunmero");
+        int numero = sc.nextInt();
+        if (numero > 10){
+            throw new LetrasException("Numero mayor a 10");
+        }
     }
 }
