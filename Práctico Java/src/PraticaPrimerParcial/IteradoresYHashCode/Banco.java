@@ -21,7 +21,6 @@ public class Banco {
                     iteCliente.remove();
             }
     }
-
     public void mostrarContenido(){
         for (Cliente cliente: clientes){
             System.out.println(cliente.toString());
@@ -29,5 +28,4 @@ public class Banco {
     }
     public Banco() {
     }
-
 }

@@ -12,7 +12,7 @@ public class PanelDeJuego extends JPanel implements ActionListener {
     static final int ALTURA_PANTALLA = 600;
     static final int TAMAÑO_UNIDAD = 25;
     static final int UNIDAD_JUEGO = (ANCHO_PANTALLA * ALTURA_PANTALLA) / TAMAÑO_UNIDAD;
-    static final int DELAY = 30;
+    static final int DELAY = 100;
     final int x[] = new int[UNIDAD_JUEGO];
     final int y[] = new int[UNIDAD_JUEGO];
     int tamañoSerpiente = 6;
