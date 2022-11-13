@@ -1,8 +1,9 @@
 package PracticaSegundoParcial;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 
-public class Cliente extends Persona implements Informe{
+public class Cliente extends Persona implements Serializable {
 
     private LinkedList<Activo> activos = new LinkedList<>();
 

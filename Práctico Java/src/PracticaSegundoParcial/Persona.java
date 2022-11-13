@@ -1,6 +1,8 @@
 package PracticaSegundoParcial;
 
-public abstract class Persona implements Informe {
+import java.io.Serializable;
+
+public abstract class Persona implements Informe, Serializable {
 
     private String nombre;
     private String apellido;

@@ -1,6 +1,8 @@
 package PracticaSegundoParcial;
 
-public class Activo implements Informe {
+import java.io.Serializable;
+
+public class Activo implements Informe, Serializable {
 
     private String nombre;
     private int monto;
