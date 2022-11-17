@@ -130,7 +130,6 @@ public class Main {
                                     tipoActivo = sc.nextInt();
                                 }catch (InputMismatchException e){
                                     System.out.println("Error: " + "Ingrese un numero por favor  \n");
-                                    sc.nextLine();
                                     error = true;
                                 }
                                 if (!error){
