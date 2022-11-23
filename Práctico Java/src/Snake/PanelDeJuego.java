@@ -15,14 +15,14 @@ public class PanelDeJuego extends JPanel implements ActionListener {
     static final int DELAY = 100;
     final int x[] = new int[UNIDAD_JUEGO];
     final int y[] = new int[UNIDAD_JUEGO];
-    int tamañoSerpiente = 6;
-    int manzanasComidas = 0;
-    int manzanaX;
-    int manzanaY;
-    char direccion = 'R';
-    boolean seEstaMoviendo = false;
-    Timer timer;
-    Random random;
+    private int tamañoSerpiente = 6;
+    private int manzanasComidas = 0;
+    private int manzanaX;
+    private int manzanaY;
+    private char direccion = 'R';
+    private boolean seEstaMoviendo = false;
+    private Timer timer;
+    private Random random;
     PanelDeJuego(){
         random = new Random();
         this.setPreferredSize(new Dimension(ANCHO_PANTALLA, ALTURA_PANTALLA));
@@ -43,12 +43,6 @@ public class PanelDeJuego extends JPanel implements ActionListener {
     }
     public void dibujar(Graphics g){
         if(seEstaMoviendo) {
-            /*
-            for (int i = 0; i < ALTURA_PANTALLA / TAMAÑO_UNIDAD; i++) {
-                g.drawLine(i * TAMAÑO_UNIDAD, 0, i * TAMAÑO_UNIDAD, ALTURA_PANTALLA);
-                g.drawLine(0, i * TAMAÑO_UNIDAD, ANCHO_PANTALLA, i * TAMAÑO_UNIDAD);
-            }
-            */
             g.setColor(Color.red);
             g.fillOval(manzanaX, manzanaY, TAMAÑO_UNIDAD, TAMAÑO_UNIDAD);
             for (int i = 0; i < tamañoSerpiente; i++) {

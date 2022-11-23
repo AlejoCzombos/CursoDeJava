@@ -16,7 +16,7 @@ public class VerticeP {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Vertice vertice = (Vertice) o;
+        Verticee vertice = (Verticee) o;
         return Objects.equals(valor, vertice.valor);
     }
 

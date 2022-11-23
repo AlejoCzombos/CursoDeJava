@@ -1,11 +1,9 @@
 package Practica_TAD;
 
-import java.util.LinkedList;
-
 public class Pruebas {
     public static void main(String[] args){
         String[] vertices = {"A","B","C","D","E","F","G"};
-        Grafo grafo = new Grafo(vertices);
+        Grafooo grafo = new Grafooo(vertices);
 
         grafo.conectar("A","B",7);
         grafo.conectar("A","D",5);

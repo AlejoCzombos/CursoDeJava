@@ -1,17 +1,17 @@
 package Practica_TAD;
 
-public class Grafo {
+public class Grafooo {
 
     int[][] matrizPesos;
-    Vertice[] listaAdyacencia;
+    Verticee[] listaAdyacencia;
     String[] vertices;
 
-    public Grafo(String[] vertices) {
-        listaAdyacencia = new Vertice[vertices.length];
+    public Grafooo(String[] vertices) {
+        listaAdyacencia = new Verticee[vertices.length];
         this.vertices = vertices;
         matrizPesos = new int[vertices.length][vertices.length];
         for (int i = 0;i<vertices.length; i++){
-            listaAdyacencia[i] = new Vertice(vertices[i]);
+            listaAdyacencia[i] = new Verticee(vertices[i]);
         }
     }
 
@@ -26,9 +26,9 @@ public class Grafo {
 
         for (int i = 0; i < vertices.length; i++){
             if(listaAdyacencia[i].valor.equals(v1)){
-                listaAdyacencia[i].nodosAdyacentes.agregar(v2);
+                listaAdyacencia[i].nodosAdyacentes.add(v2);
             }else if (listaAdyacencia[i].valor.equals(v2)){
-                listaAdyacencia[i].nodosAdyacentes.agregar(v1);
+                listaAdyacencia[i].nodosAdyacentes.add(v1);
             }
         }
     }
@@ -43,10 +43,6 @@ public class Grafo {
     public void impimirListaAdyasencia(){
         for (int i = 0; i < vertices.length; i++){
             System.out.println(listaAdyacencia[i].toString());
-        }
-    }
-    public void impimirParesAdyacencia(){
-        for (int i = 0; i < vertices.length; i++){
         }
     }
 

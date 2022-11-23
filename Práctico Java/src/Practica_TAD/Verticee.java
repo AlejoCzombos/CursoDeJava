@@ -3,21 +3,21 @@ package Practica_TAD;
 import java.util.LinkedList;
 import java.util.Objects;
 
-public class Vertice {
+public class Verticee {
 
     String valor;
-    ListaSimple nodosAdyacentes;
+    LinkedList nodosAdyacentes;
 
-    public Vertice(String valorV){
+    public Verticee(String valorV){
         this.valor = valorV;
-        nodosAdyacentes = new ListaSimple();
+        nodosAdyacentes = new LinkedList();
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Vertice vertice = (Vertice) o;
+        Verticee vertice = (Verticee) o;
         return Objects.equals(valor, vertice.valor);
     }
 
